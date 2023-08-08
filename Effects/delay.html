@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delay Effects</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>delay Effects</h1>
+    <div></div>
+    <br />
+    <button>Delay</button>
+    <script>
+      $("button").click(function () {
+        $("div").delay("slow").fadeOut();
+      });
+    </script>
+  </body>
+</html>

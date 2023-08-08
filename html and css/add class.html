@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add class name</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Add class name</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, aliquid
+      perspiciatis! Blanditiis minus quo ullam quidem temporibus voluptatibus
+      totam? Nemo magni maiores sint ipsam nesciunt magnam adipisci asperiores
+      doloribus sapiente!
+    </p>
+    <li>home</li>
+    <br />
+    <button>Add class</button>
+    <script>
+      $("button").click(function () {
+        $("p,li").addClass("text");
+      });
+    </script>
+  </body>
+</html>

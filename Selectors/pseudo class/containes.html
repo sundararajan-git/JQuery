@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:contains Pseudo class</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>:contains Pseudo class</h1>
+    <ul>
+      <li>Match Box</li>
+      <li>Ball</li>
+      <li>Metal Box</li>
+      <li>Fox</li>
+      <li>Switch Box</li>
+    </ul>
+    <button>Get box word in li element</button>
+    <script>
+      $("button").click(function () {
+        // Get box word in li element and add color
+        $("li:contains('Box')").css("color", "red");
+      });
+    </script>
+  </body>
+</html>

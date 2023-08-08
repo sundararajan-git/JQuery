@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child selector</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Child selector</h1>
+    <div style="border: 1px solid black">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam
+        ipsam, aliquam dolores maxime, consequuntur commodi asperiores neque
+        illum, magnam deserunt sapiente dicta soluta consectetur expedita
+        excepturi laborum perspiciatis fugiat!
+      </p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, eius
+      voluptatibus a enim aliquid, officia nihil est dolor, vel repudiandae amet
+      voluptate quibusdam totam. Earum perspiciatis ipsum adipisci cupiditate
+      culpa.
+    </p>
+    <button>Get child of div element</button>
+    <script>
+      $("button").click(function () {
+        // get child of div  element and add color
+        $("div>p").css("color", "red");
+      });
+    </script>
+  </body>
+</html>

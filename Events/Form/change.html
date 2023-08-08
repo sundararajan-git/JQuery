@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Event</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Change Event</h1>
+    <form>
+      <label for="name">Name :</label>
+      <input type="text" value="Arun" />
+    </form>
+    <script>
+      // change the name and clik the screen
+      $("input").change(function () {
+        alert("Changed ");
+      });
+    </script>
+  </body>
+</html>

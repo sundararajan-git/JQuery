@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detach for all Element</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Detach for all Element</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad inventore
+      quod temporibus veritatis illum esse fugit ipsum exercitationem
+      voluptatibus! Nihil provident dignissimos dolores natus nisi id, nulla
+      aspernatur veniam libero?
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ducimus
+      veritatis laudantium, commodi facilis itaque voluptates culpa totam
+      praesentium vel numquam earum voluptate dolores alias atque maxime minima.
+      Aliquam, illum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas
+      alias veritatis vitae nihil. Temporibus vel, delectus tenetur animi quis
+      numquam quos impedit dolor, ipsa ex deserunt error unde. Illum.
+    </p>
+    <br />
+    <button>delete</button>
+    <script>
+      $("button").click(function () {
+        $("p").detach();
+      });
+    </script>
+  </body>
+</html>

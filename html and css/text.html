@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change text of Element</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Change text of Element</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum vel quasi
+      corrupti inventore expedita perferendis mollitia quas cum minima
+      obcaecati, sit nihil iure consectetur corporis fugiat nobis quia odit
+      illum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi harum quod
+      animi eius sed perferendis deleniti numquam corporis dolores consectetur?
+      Delectus nulla corrupti voluptatem labore modi error et deserunt porro?
+    </p>
+    <br />
+    <button>Change text</button>
+    <script>
+      $("button").click(function () {
+        $("p").text("Hello World!");
+      });
+    </script>
+  </body>
+</html>

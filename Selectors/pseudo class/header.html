@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:header Pesudo class</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>:header pesudo class</h1>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quibusdam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quibusdam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quibusdam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quibusdam.
+      </p>
+    </main>
+    <br />
+    <footer>
+      <button>Get heading of document</button>
+    </footer>
+    <script>
+      $("button").click(function () {
+        // get heading of document and add color
+        $(":header").css("color", "blue");
+      });
+    </script>
+  </body>
+</html>

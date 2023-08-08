@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>key press Event</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>key press Event</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iure sed,
+      numquam aliquam doloremque culpa iusto saepe sint repudiandae delectus
+      ratione autem qui eveniet quo. At, cupiditate! Doloribus, distinctio fuck
+      modi.
+    </p>
+    <script>
+      // any key press in document  and add the background color for p
+      $(Document).keypress(function () {
+        $("p").css("background-color", "yellow");
+      });
+    </script>
+  </body>
+</html>

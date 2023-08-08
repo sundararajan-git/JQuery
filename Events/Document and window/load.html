@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Load Event</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Load Event</h1>
+    <form>
+      <label for="name">Name :</label>
+      <input type="text" placeholder="Name" />
+    </form>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea
+      adipisci reiciendis aperiam! Doloremque, dolores dolorem corporis repellat
+      quis molestias dicta, voluptas assumenda sed vitae ex, sunt nisi
+      reprehenderit libero!
+    </p>
+    <img
+      src="/FM_TS2.pngEBF2CE9A-EAC1-48D4-BA04-987494C205A2Large.jpg"
+      alt="cartoon"
+      width="300px"
+      loading="lazy"
+    />
+    <script>
+      $("img").on("load", function () {
+        alert("Image Loaded..");
+      });
+    </script>
+  </body>
+</html>

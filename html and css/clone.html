@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Element</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Clone Element</h1>
+    <h3>Orginal</h3>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad inventore
+      quod temporibus veritatis illum esse fugit ipsum exercitationem
+      voluptatibus! Nihil provident dignissimos dolores natus nisi id, nulla
+      aspernatur veniam libero?
+    </p>
+    <h2>Clone</h2>
+    <div
+      style="
+        border: 2px solid black;
+        height: 100px;
+        padding: 5px;
+        border-radius: 5px;
+      "
+    ></div>
+    <br />
+    <button>clone</button>
+    <script>
+      $("button").click(function () {
+        $("p").clone().appendTo("div");
+      });
+    </script>
+  </body>
+</html>

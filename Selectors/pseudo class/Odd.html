@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:odd Pseudo class</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>:odd Pseudo class</h1>
+    <p>Number 0</p>
+    <p>Number 1</p>
+    <p>Number 2</p>
+    <p>Number 3</p>
+    <p>Number 4</p>
+    <p>Number 5</p>
+
+    <button>Get odd P element</button>
+    <script>
+      $("button").click(function () {
+        // get odd p element and add color
+        $("p:odd").css("color", "blue");
+      });
+    </script>
+  </body>
+</html>

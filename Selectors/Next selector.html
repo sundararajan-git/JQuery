@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next selector</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Next selector</h1>
+    <li>Previous of P Element</li>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      ipsum est ea placeat magni ullam delectus. Dolor placeat dignissimos
+      minima molestiae obcaecati corporis mollitia repudiandae consectetur, quae
+      explicabo, amet cumque.
+    </p>
+    <li>Next of P Element</li>
+    <br />
+    <button>Get next child of p element</button>
+    <script>
+      $("button").click(function () {
+        // get next child of p  element and add color
+        $("p+li").css("color", "red");
+      });
+    </script>
+  </body>
+</html>

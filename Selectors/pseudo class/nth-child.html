@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:nth-child Pseudo class</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>:nth-child Pseudo class</h1>
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+      <li>List 4</li>
+    </ul>
+    <br />
+    <button>Get 3 child of li element</button>
+    <script>
+      $("button").click(function () {
+        // get 3 child ul element and add color
+        $("li:nth-child(3)").css("color", "blue");
+      });
+    </script>
+  </body>
+</html>

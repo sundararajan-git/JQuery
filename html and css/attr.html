@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute set of Element</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Attribute set of Element</h1>
+    <img
+      src="/FM_TS2.pngEBF2CE9A-EAC1-48D4-BA04-987494C205A2Large.jpg"
+      alt="img"
+      width="100px"
+    /><br />
+    <br />
+    <button>Set Attribute</button>
+    <script>
+      $("button").click(function () {
+        $("img").attr("width", "200px");
+      });
+    </script>
+  </body>
+</html>

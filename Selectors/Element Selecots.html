@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Selector</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Element Selector</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+      maxime itaque. Ullam dolores maxime blanditiis exercitationem fugit nulla,
+      voluptatem vel modi consequatur quae qui sequi soluta quibusdam, in
+      accusamus repellat.
+    </p>
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+    </ul>
+    <button>Get P Element and add Color</button>
+    <script>
+      $("button").click(function () {
+        // get p element  and add color
+        $("p").css("color", "blue");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check class for Element</title>
+    <!-- jQuery CDN link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Check class for Element</h1>
+    <p class="text">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio at
+      ipsum exercitationem assumenda sapiente magni. Alias voluptatem ea
+      doloremque dolore.
+    </p>
+    <br />
+    <button>Check class</button>
+    <script>
+      // check class the p element
+      $("button").click(function () {
+        alert($("p").hasClass("text"));
+      });
+    </script>
+  </body>
+</html>
